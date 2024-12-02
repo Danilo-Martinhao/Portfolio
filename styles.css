@@ -106,3 +106,13 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Photos */
+.profile-pic {
+    width: 150px; /* Largura ajustada */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Faz a imagem ficar circular */
+    margin: 10px auto; /* Espaço ao redor */
+    display: block; /* Centraliza se usado com auto margins */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
+}
