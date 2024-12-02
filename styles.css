@@ -59,6 +59,38 @@ body, html {
     background: #333333; /* Slightly lighter on hover */
 }
 
+@media (max-width: 768px) {
+    .sidebar {
+      width: 60px; /* Shrink sidebar width */
+      padding: 10px 0;
+    }
+  
+    .sidebar img {
+      width: 50px; /* Smaller profile image */
+      height: 50px;
+    }
+  
+    .sidebar a {
+      font-size: 0; /* Hide text links */
+      margin: 10px 0;
+    }
+  
+    .sidebar a::after {
+      /* Icons-only navigation */
+      content: attr(data-icon);
+      font-size: 24px;
+      color: #ffffff;
+      margin: 0;
+      display: block;
+      text-align: center;
+    }
+  
+    .sidebar .social-icons {
+      gap: 10px; /* Adjust social icons spacing */
+    }
+  }
+
+
 /* Main Content */
 .content {
     flex: 1;
@@ -68,6 +100,7 @@ body, html {
     align-items: center;
     position: relative;
 }
+
 
 /* Sections */
 .content section {
