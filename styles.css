@@ -71,17 +71,22 @@ body, html {
 
 /* Sections */
 .content section {
+    opacity: 0;
+    transform: scale(0.95); /* Slight zoom-out effect */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    position: absolute;
     width: 80%;
-    display: none; /* Hide all sections initially */
     text-align: center;
     border-radius: 8px;
     padding: 20px;
-    background-color: #1e1e1e; /* Dark background for sections */
+    background-color: #1e1e1e;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .content section.active {
-    display: block; /* Show active section */
+    opacity: 1;
+    transform: scale(1); /* Reset scale */
+    position: relative;
 }
 
 h2 {
