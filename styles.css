@@ -108,11 +108,52 @@ a:hover {
 }
 
 /* Photos */
+.profile {
+    text-align: center;
+}
+
 .profile-pic {
-    width: 150px; /* Largura ajustada */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 50%; /* Faz a imagem ficar circular */
-    margin: 10px auto; /* Espaço ao redor */
-    display: block; /* Centraliza se usado com auto margins */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #ffcc66;
+    margin-bottom: 10px;
+}
+
+.profile h2 {
+    font-size: 18px;
+    margin: 0;
+    color: #fff;
+}
+
+.cta-button {
+    margin: 20px 0;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+}
+
+.social-media {
+    margin-top: auto; /* Push to bottom */
+    display: flex;
+    gap: 15px;
+}
+
+.social-media a {
+    font-size: 20px;
+    color: #e0e0e0;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ffcc66;
 }
